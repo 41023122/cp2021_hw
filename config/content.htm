@@ -799,11 +799,69 @@ def ccc_inp(ev):
 doc["ccc"].bind('click', ccc_inp)
 
 #0000000000000000000000000000000000000000000000000000000000000
+a1_qwe_url = "https://gist.githubusercontent.com/41023122/471b1f4b5ae81bbe0d8fb31fcdfdb375/raw/ed0f5599bb656775fd6c0ae8a7a5264034cd62c0/gistfile1.txt"
+# 從 gist 取得程式碼
+a1_wq = open(a1_qwe_url).read()
+
+def a1_inp(ev):
+     Ace.editor.setValue(a1_wq)
+     Ace.editor.scrollToRow(0)
+     Ace.editor.gotoLine(0)
+     #Ace.run()
+
+# id 為 "asd" 的按鈕點按時, 執行 chec_inp 方法
+doc["a1"].bind('click', a1_inp)
+
+#0000000000000000000000000000000000000000000000000000000000000
+a2_qwe_url = "https://gist.githubusercontent.com/41023122/72a6d4a40cfd2d212f8b104e8345a1f9/raw/817d6ec52e7770e108216843ac4162da248fceed/gistfile1.txt"
+# 從 gist 取得程式碼
+a2_wq = open(a2_qwe_url).read()
+
+def a2_inp(ev):
+     Ace.editor.setValue(a2_wq)
+     Ace.editor.scrollToRow(0)
+     Ace.editor.gotoLine(0)
+     #Ace.run()
+
+# id 為 "asd" 的按鈕點按時, 執行 chec_inp 方法
+doc["a2"].bind('click', a2_inp)
+
+#0000000000000000000000000000000000000000000000000000000000000
+b1_qwe_url = "https://gist.githubusercontent.com/41023122/9a7a48194ed28bb08854731a4db68e21/raw/1d8045be5623e184c095d2aee0874d9e57bc580d/gistfile1.txt"
+# 從 gist 取得程式碼
+b1_wq = open(b1_qwe_url).read()
+
+def b1_inp(ev):
+     Ace.editor.setValue(b1_wq)
+     Ace.editor.scrollToRow(0)
+     Ace.editor.gotoLine(0)
+     #Ace.run()
+
+# id 為 "asd" 的按鈕點按時, 執行 chec_inp 方法
+doc["b1"].bind('click', b1_inp)
+
+#0000000000000000000000000000000000000000000000000000000000000
+b2_qwe_url = "https://gist.githubusercontent.com/41023122/b4209519455416256b58439e7e5c364b/raw/cd103a700efb97ab829ca60701f1cdae60db5a35/gistfile1.txt"
+# 從 gist 取得程式碼
+b2_wq = open(b2_qwe_url).read()
+
+def b2_inp(ev):
+     Ace.editor.setValue(b2_wq)
+     Ace.editor.scrollToRow(0)
+     Ace.editor.gotoLine(0)
+     #Ace.run()
+
+# id 為 "asd" 的按鈕點按時, 執行 chec_inp 方法
+doc["b2"].bind('click', b2_inp)
+
+#0000000000000000000000000000000000000000000000000000000000000
 # 呼叫函式執行
 run()
-#1111111111111111111111111111
+#1111111111111111111111111111111111111111111111111111
 </script>
-<button id="aaa">紅點</button> <button id="bbb">座標 </button> <button id="ccc">snake</button></p>
+上課內容有<button id="aaa">紅點</button> ,<button id="bbb">座標 </button> , <button id="ccc">snake</button></p>
+<p>期末考:<button id="a1">final1</button> <button id="a2">final2</button> 而<button id="b1">失敗1</button> <button id="b2">失敗2</button></p>
+<p>是剛開始的想法 1.是希望設定隱形的點讓蛇追 2.是利用位移來跑,但背景都被吃掉了</p>
 <p><!-- 用來顯示程式碼的 editor 區域 --></p>
 <div id="kw_editor" style="width: 600px; height: 300px;"></div>
 <p><!-- 以下的表單與按鈕與前面的 Javascript doSave 函式以及 FileSaver.min.js 互相配合 --></p>
